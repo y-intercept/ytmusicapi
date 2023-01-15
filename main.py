@@ -3,12 +3,12 @@ import ytmusicapi
 import pprint
 import tqdm
 
-#Setup Client ####
-ytmusicapi.YTMusic.setup(filepath=r"C:\Users\jcd503.000\Documents\CODE\headers_auth.json")
+#Setup Client - C
+ytmusicapi.YTMusic.setup(filepath=r"C:\Documents\CODE\ytmusicapi\headers_auth.json")
 yt = ytmusic_client = ytmusicapi.YTMusic("headers_auth.json")
 
 #Import Spotify data
-with open(r"C:\Users\jcd503.000\Documents\CODE\spotify_data.json", "r", encoding='utf-8') as myfile:
+with open(r"C:\Documents\CODE\Data\spotify_data.json", "r", encoding='utf-8') as myfile:
     data = myfile.read()
 spotData = json.loads(data)
 pprint.pprint(spotData)
