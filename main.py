@@ -1,9 +1,10 @@
+##### WIP #####
 import json
 import ytmusicapi
 import pprint
 import tqdm
 
-#Setup Client - C
+#Setup Client
 ytmusicapi.YTMusic.setup(filepath=r"C:\Documents\CODE\ytmusicapi\headers_auth.json")
 yt = ytmusic_client = ytmusicapi.YTMusic("headers_auth.json")
 
